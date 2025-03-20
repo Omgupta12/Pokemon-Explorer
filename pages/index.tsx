@@ -36,6 +36,7 @@ export default function Home() {
         // console.log('detailedPokemons',detailedPokemons);
         setPokemons(detailedPokemons);
       } catch (error) {
+        console.log(error)
         setError(true);
       } finally {
         setLoading(false);

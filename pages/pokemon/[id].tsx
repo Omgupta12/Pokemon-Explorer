@@ -22,6 +22,7 @@ export default function PokemonDetailPage() {
         const res = await axios.get<PokemonDetail>(`https://pokeapi.co/api/v2/pokemon/${id}`);
         setPokemon(res.data);
       } catch (error) {
+        console.log(error)
         setError(true);
       } finally {
         setLoading(false);
